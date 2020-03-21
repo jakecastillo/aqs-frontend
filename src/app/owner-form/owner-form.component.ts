@@ -14,6 +14,6 @@ export class OwnerFormComponent {
   onSubmit() { this.submitted = true; }
 
   // TODO: Remove this when done
-  get diagnostic() { return JSON.stringify(this.model); }
+  // get diagnostic() { return JSON.stringify(this.model); }
 
 }
