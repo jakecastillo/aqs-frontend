@@ -1,9 +1,7 @@
 import {HttpClient} from '@angular/common/http';
 import {Component, AfterViewInit} from '@angular/core';
 
-/**
- * @title Table retrieving data through HTTP
- */
+/* Table that retreives data via HTTP */
 @Component({
   selector: 'app-front-display',
   styleUrls: ['front-display.component.css'],
