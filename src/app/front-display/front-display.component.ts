@@ -9,7 +9,7 @@ import {Component, AfterViewInit} from '@angular/core';
 })
 export class FrontDisplayComponent implements AfterViewInit {
   displayedColumns: string[] = ['No.', 'Last Initial, First', 'Status', 'No.', 'Last Initial, First', 'Status'];
-  exampleDatabase: HttpDatabase | null;   /* Database from kiosk */
+  database: HttpDatabase | null;   /* Database from kiosk */
   data: KioskInfo[] = [];   /* Data to use */
 
   resultsLength = 0;
