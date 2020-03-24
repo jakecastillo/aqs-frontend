@@ -32,6 +32,6 @@ export interface KioskInfo {
 
 /* Database from kiosk to use for the front display queue */
 export class HttpDatabase {
-
+    // Wei
   }
 }
