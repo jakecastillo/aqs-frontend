@@ -14,6 +14,7 @@ import { KioskIntialComponent } from './kiosk-intial/kiosk-intial.component';
 import { KioskStartComponent } from './kiosk-start/kiosk-start.component';
 import { SearchScreenComponent } from './search-screen/search-screen.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { IfPrequalComponent } from './if-prequal/if-prequal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     BackDisplayComponent,
     KioskIntialComponent,
     KioskStartComponent,
-    SearchScreenComponent
+    SearchScreenComponent,
+    IfPrequalComponent
   ],
   imports: [
     BrowserModule,
