@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { Owner } from '../owner';
+import { MatInputModule } from '@angular/material/input'
 
 @Component({
+
   selector: 'app-owner-form',
   templateUrl: './owner-form.component.html',
   styleUrls: ['./owner-form.component.css']
 })
+
 export class OwnerFormComponent {
 
   names = ['John Doe', 'Jane Doe'];

@@ -1,47 +1,59 @@
-<h2>Please sign-in by entering the following:</h2>
-
 <div class="container">
+  <h2>Please sign-in by entering the following:</h2>
   <form>
     <!-- Last Name -->
-    <div class="form-group">
-      <label for="lastname">Last Name</label>
-      <input type="text" class="form-control" id="lastname" required>
-      <div class="alert alert-danger">    <!-- TODO: Implement error message if input has been left blank after submission -->
-        This field is required
-      </div>
-    </div>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Doe" value="">
+      </mat-form-field>
+      </form>
 
     <!-- First Name -->
-    <div class="form-group">
-      <label for="firstname">First Name</label>
-      <input type="text" class="form-control" id="firstname" required>
-    </div>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="John" value="">
+      </mat-form-field>
+      </form>
 
     <!-- Phone Number -->
-    <div class="form-group">
-      <label for="areaCode">Phone Number</label>
-      <input type="text" class="form-control" placeholder="+1" maxlength="3" id="areaCode" required>
-      <input type="text" class="form-control" placeholder="( _ _ _ )" maxlength="3" id="areaCode" required>
-      <input type="text" class="form-control" placeholder="_ _ _" maxlength="3" id="phone3" required>
-      <input type="text" class="form-control" placeholder="_ _ _ _" maxlength="4" id="phone4" required>
-    </div>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Phone Number +1</mat-label>
+        <input matInput placeholder="+1" value="">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>(xxx)</mat-label>
+        <input matInput placeholder="(xxx)" value="">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>xxx</mat-label>
+        <input matInput placeholder="xxx" value="">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>-xxxx</mat-label>
+        <input matInput placeholder="-xxxx" value="">
+      </mat-form-field>
+      </form>
 
     <!-- Email -->
-    <div class="form-group">
-      <label for="email">Email Address</label>
-      <input type="text" class="form-control" id="email" required>
-    </div>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Email address</mat-label>
+        <input matInput placeholder="example@example.com" value="">
+      </mat-form-field>
+      </form>
 
     <!-- Pet Microchip-->
-    <div class="form-group">
-      <label for="microchip">Pet Microchip ID</label>
-      <input type="text" class="form-control" id="microchip">
-    </div>
-
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Microchip</mat-label>
+        <input matInput placeholder="FDXA chip" value="">
+      </mat-form-field>
+    </form>
     <!-- Submit form -->
     <button type="submit" class="btn btn-success">Submit</button>
-  </form>
-</div>
 
 <router-outlet></router-outlet>
 
